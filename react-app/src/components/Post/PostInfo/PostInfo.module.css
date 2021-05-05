@@ -1,0 +1,25 @@
+.PostInfo {
+    display: flex;
+    margin: 10px;
+}
+
+.Image {
+    width: 60px;
+    height: 60px;
+    object-fit: cover;
+    border-radius: 50%;
+}
+
+.Context{
+    text-align: left;
+    font-size: 20px;
+    padding: 10px;
+}
+
+.Info {
+    display: flex;
+    margin: 0 10px;
+    margin-top: 8px;
+    flex-flow: column;
+    text-align: left;
+}

@@ -1,0 +1,134 @@
+.LoginCard {
+    position: fixed;
+    z-index: 500;
+    background-color: rgb(0,0,0,0.3);
+    width: 500px;
+    height: 500px;
+    border: none;
+    border-radius: 5px;
+    padding: 16px;
+    top: 50%;
+    left: 50%;
+    margin-top: -250px;
+    margin-left: -250px;
+    box-sizing: border-box;
+    transition: all 0.3s ease-out;
+  }
+  
+  .HeaderContainer{
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      align-content: center;
+      padding-top: 25px;
+  }
+  
+  .BackButton{
+    border: none;
+    width: 50px;
+    padding: 0;
+    margin: 0;
+    outline: none;
+    box-sizing: border-box;
+    text-decoration: none;
+    text-transform: uppercase;
+    font-family:'Roboto',sans-serif;
+    font-weight:400;
+    color:#FFFFFF;
+    background-color: transparent;
+    cursor: pointer;
+    text-align:center;
+    transition: all 0.15s;
+  }      
+  .BackButton:hover{
+    color:#DDDDDD;
+    border-color:#DDDDDD;
+    }
+  
+  .Form{
+      display: flex;
+      flex-flow: column;
+      padding-top: 25px;
+      margin: auto;
+  
+  }
+  .Input{
+      margin: 10px auto;
+      width: 70%;
+      height: 40px;
+      border-radius: 5px;
+      outline: none;
+      border: none;
+      box-sizing: border-box;
+      padding: 10px;
+      font-size: 17px;
+  }
+  
+  .LoginButton{
+      padding: 0.5em 3em;
+      border: 0.16em solid #FFFFFF;
+      width: 50%;
+      margin: 30px auto 0 auto;
+      outline: none;
+      box-sizing: border-box;
+      text-decoration: none;
+      text-transform: uppercase;
+      font-family:'Roboto',sans-serif;
+      font-weight:400;
+      color:#FFFFFF;
+      background-color: transparent;
+      cursor: pointer;
+      text-align:center;
+      transition: all 0.15s;
+      }
+      .LoginButton:hover{
+      color:#DDDDDD;
+      border-color:#DDDDDD;
+      }
+  
+      .SignupButton{
+          padding: 0.5em 3em;
+          border: 0.16em solid #FFFFFF;
+          width: 50%;
+          margin: 0 autok;
+          outline: none;
+          box-sizing: border-box;
+          text-decoration: none;
+          text-transform: uppercase;
+          font-family:'Roboto',sans-serif;
+          font-weight:400;
+          color:#FFFFFF;
+          background-color: transparent;
+          cursor: pointer;
+          text-align:center;
+          transition: all 0.15s;
+          }
+          .SignupButton:hover{
+          color:#DDDDDD;
+          border-color:#DDDDDD;
+          }
+  
+  
+   @media (max-width: 550px){
+      .LoginCard{
+          width: 350px;
+          height: 500px;
+          top: 50%;
+          left: 50%;
+          margin-top: -250px;
+          margin-left: -175px;
+          box-sizing: border-box;
+          transition: all 0.3s ease-out;
+  
+      }
+      .SignupButton{
+          width: 60%;
+      }
+      .LoginButton{
+          width: 60%;
+      }
+      .Input{
+          width: 80%;
+      }
+  
+  }

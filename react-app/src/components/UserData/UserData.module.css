@@ -1,0 +1,25 @@
+.Container {
+    display: flex;
+    flex-flow: column;
+    margin: 8px 10px 0 10px;
+}
+.Text {
+    text-align: left;
+    margin: 0;
+  }
+  .PostInfo {
+    display: flex;
+    width: 100%;
+}
+  .Image {
+    width: 60px;
+    height: 60px;
+    object-fit: cover;
+    border-radius: 50%;
+}
+  .Date{
+    color: grey ;
+    text-align: left;
+    font-size: 15px;
+    margin: 0;
+  }

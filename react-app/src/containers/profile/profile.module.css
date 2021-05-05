@@ -1,0 +1,49 @@
+
+.HeadContainer{
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+.EditIconContainer{
+    background-color: rgb(0, 0, 0, 0.7);
+    position: absolute;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    top: 106px;
+    height: 250px;
+    width: 250px;
+    opacity: 0;
+    transition: .3s ease;
+    border-radius: 50%;
+    z-index: 10;
+}
+.EditIconContainer:hover{
+    opacity: 1;
+}
+.EditIcon{
+    position: absolute;
+    color: white;
+    cursor: pointer;
+    margin: auto auto;
+}
+.Image {
+    background-color: balck;
+    margin-top: 50px;
+    object-fit: cover;
+    height: 250px;
+    width: 250px;
+    border-radius: 50%;
+    z-index: 0;
+}
+
+.Desc{
+    padding-top: 10px;
+    font-size: 20px;
+}
+.Header{
+    font-size: 50px;
+    font-weight: bold;
+}

@@ -1,0 +1,103 @@
+.Container {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+    display: flex;
+    flex-flow: column;
+    box-sizing: border-box;
+    justify-content: space-between;
+    height: 93%;
+}
+
+.NotificationContainer{
+    box-sizing: border-box;
+    list-style: none;
+    width: 100%;
+}
+
+.NotificationContainerAnchor{
+    color:#ab003c;
+    text-decoration: none;
+    width: 100%;
+    margin: auto;
+    height: auto;
+    box-sizing: border-box;
+    justify-content: space-between;
+    cursor: pointer;
+    display: flex;
+}
+
+.NavigationItems {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+    display: flex;
+    flex-flow: column;
+    height: 100%;
+}
+
+.badge{
+    width: 5px;
+    height: 5px;
+    padding: 5px 5px;
+    margin: auto auto;
+    border-radius: 50%;
+    background: #AB003C;
+    color: transparent;
+}
+
+.Hline {
+    width: 98%;
+    margin-left: 20px;
+    border: none;
+    background-color: #cccccc;
+    height: 0.5px;
+}
+.Icon{
+    margin: auto 10px;
+    justify-self: right;
+
+}
+
+@media (min-width: 500px){
+    .Container{
+        flex-flow: row;
+    }
+
+    .NavigationItems{
+        flex-flow: row;
+    }
+
+    .NotificationContainer{
+        margin: auto;
+        display: flex;
+        height: 100%;
+        width: 100px;
+        align-items: center;
+    }
+    .badge {
+        position: absolute;
+        top: 5px;
+        right: 153px;
+        width: 10px;
+        height: 10px;
+        margin: 0;
+        font-size: 15px;
+        border-radius: 50%;
+        z-index: 100;
+        background: white;
+        color: black;
+      }
+    .Hline {
+       display: none;
+    }
+    .Title{
+        display: none;
+    }
+    .Icon{
+        margin: auto;
+        color: linear-gradient(grey,black);
+        color: rgb(48, 46, 46);
+    
+    }
+}
