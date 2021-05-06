@@ -5,7 +5,6 @@ import PhotoIcon from "@material-ui/icons/Photo";
 import PostAddIcon from "@material-ui/icons/PostAdd";
 import { Button } from "@material-ui/core";
 import CloseIcon from "@material-ui/icons/Close";
-import IconButton from "@material-ui/core/IconButton";
 
 const NewPost = () => {
     const [image, setImage] = useState(null);

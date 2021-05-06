@@ -42,6 +42,12 @@ const NotificationMenu = () => {
           </div>
         </NavLink>
 
+        <NavLink to="#" style={{ padding: "0" }}>
+          <div className={classes.NotificationElement}>
+            <TextCombo primary="Elon Musk Just Rated your Post" secondary="The Date" />
+          </div>
+        </NavLink>
+
       </div>
     </div>
   );

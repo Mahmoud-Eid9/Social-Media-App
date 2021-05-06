@@ -30,4 +30,5 @@
     .Toolbar{
         padding: 0 20px;
     }
+    .Toolbar :nth-child(2) { order: 3; }
 }

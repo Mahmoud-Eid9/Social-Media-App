@@ -4,7 +4,7 @@ import classes from "./Layout.module.css";
 import Toolbar from "../../components/Navigation/Toolbar/Toolbar";
 import SideDrawer from "../../components/Navigation/SideDarwer/SideDrawer";
 import Posts from '../Posts/Posts'
-import Profile from '../profile/profile'
+import Profile from '../Profile/Profile'
 import { Redirect, Route, Switch } from "react-router-dom";
 
 

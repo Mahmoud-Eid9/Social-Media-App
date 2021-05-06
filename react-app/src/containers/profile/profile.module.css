@@ -42,8 +42,37 @@
 .Desc{
     padding-top: 10px;
     font-size: 20px;
+    position: relative;
+    width: 30%;
 }
 .Header{
     font-size: 50px;
     font-weight: bold;
+}
+.DescriptionEdit{
+    position: absolute;
+    left: 90%;
+    top: -23%;
+    cursor: pointer;
+    opacity: 0;
+    transition: 0.3 ease;
+    visibility: hidden;
+}
+.Desc:hover .DescriptionEdit{
+    visibility: visible;
+    opacity: 1;
+    transition:             opacity 0.5s;
+    -moz-transition:    opacity 0.4s;
+    -ms-transition:     opacity 0.4s;
+    -o-transition:      opacity 0.4s;
+    -webkit-transition: opacity 0.4s;
+}
+@media(max-width: 500px){
+    .DescriptionEdit{
+        margin-top: 10px;
+    }
+    .Desc{
+        width: 50%;
+        padding-top: 10px;
+    }
 }
