@@ -1,78 +1,107 @@
-
-.HeadContainer{
-    height: 100%;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
+.HeadContainer {
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
 }
-.EditIconContainer{
-    background-color: rgb(0, 0, 0, 0.7);
-    position: absolute;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    top: 106px;
-    height: 250px;
-    width: 250px;
-    opacity: 0;
-    transition: .3s ease;
-    border-radius: 50%;
-    z-index: 10;
+.ModalContainer {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding: 20px;
 }
-.EditIconContainer:hover{
-    opacity: 1;
+.TextArea {
+  width: 85%;
+  height: 150px;
+  resize: none;
+  border-radius: 15px;
+  background-color: #f1efef;
+  font-size: 20px;
+  box-sizing: border-box;
+  padding: 10px;
+  outline: none;
+  border: none;
+  margin: auto;
+  resize: none;
 }
-.EditIcon{
-    position: absolute;
-    color: white;
-    cursor: pointer;
-    margin: auto auto;
+.ButtonsContainer {
+  display: flex;
+  flex-direction: row;
+  padding: 20px;
+  width: 70%;
+  justify-content: space-between;
+  margin-top: 20px;
+}
+.EditIconContainer {
+  background-color: rgb(0, 0, 0, 0.7);
+  position: absolute;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  top: 106px;
+  height: 250px;
+  width: 250px;
+  opacity: 0;
+  transition: 0.3s ease;
+  border-radius: 50%;
+  z-index: 10;
+}
+.EditIconContainer:hover {
+  opacity: 1;
+}
+.EditIcon {
+  position: absolute;
+  color: white;
+  cursor: pointer;
+  margin: auto auto;
 }
 .Image {
-    background-color: balck;
-    margin-top: 50px;
-    object-fit: cover;
-    height: 250px;
-    width: 250px;
-    border-radius: 50%;
-    z-index: 0;
+  background-color: balck;
+  margin-top: 50px;
+  object-fit: cover;
+  height: 250px;
+  width: 250px;
+  border-radius: 50%;
+  z-index: 0;
 }
 
-.Desc{
+.Desc {
+  padding-top: 10px;
+  font-size: 20px;
+  position: relative;
+  height: fit-content;
+  width: 30%;
+}
+.Header {
+  font-size: 50px;
+  font-weight: bold;
+}
+.DescriptionEdit {
+  position: absolute;
+  left: 90%;
+  top: -23%;
+  cursor: pointer;
+  opacity: 0;
+  transition: 0.3 ease;
+  visibility: hidden;
+}
+.Desc:hover .DescriptionEdit {
+  visibility: visible;
+  opacity: 1;
+  transition: opacity 0.5s;
+  -moz-transition: opacity 0.4s;
+  -ms-transition: opacity 0.4s;
+  -o-transition: opacity 0.4s;
+  -webkit-transition: opacity 0.4s;
+}
+@media (max-width: 500px) {
+  .DescriptionEdit {
+    margin-top: 10px;
+  }
+  .Desc {
+    width: 50%;
     padding-top: 10px;
-    font-size: 20px;
-    position: relative;
-    width: 30%;
-}
-.Header{
-    font-size: 50px;
-    font-weight: bold;
-}
-.DescriptionEdit{
-    position: absolute;
-    left: 90%;
-    top: -23%;
-    cursor: pointer;
-    opacity: 0;
-    transition: 0.3 ease;
-    visibility: hidden;
-}
-.Desc:hover .DescriptionEdit{
-    visibility: visible;
-    opacity: 1;
-    transition:             opacity 0.5s;
-    -moz-transition:    opacity 0.4s;
-    -ms-transition:     opacity 0.4s;
-    -o-transition:      opacity 0.4s;
-    -webkit-transition: opacity 0.4s;
-}
-@media(max-width: 500px){
-    .DescriptionEdit{
-        margin-top: 10px;
-    }
-    .Desc{
-        width: 50%;
-        padding-top: 10px;
-    }
+  }
 }
